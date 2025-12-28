@@ -1,2 +1,4 @@
 # down the API rabbithole
-These are projects done for the educational purpose of becoming more familiar with the windows API and interacting with the native api, system calls and DLLs
+These are projects done for the educational purpose of becoming more familiar with the windows API and interacting with the native api, system calls and DLLs. In this walk-through, I was able to create a simple DLL injection using various window API calling functions. This script and the associated DLL are relatively rudementary, but they demostrate an important concept which can be leveraged for hard-to-detect attacks. This can evade basic anti-virus softwares which user user-hooking to identify illegitimate processes and using the legitimate process to obfuscate the execution of the DLL. One of the best defense againast DLL injection is digital signature verification and maintain an allow-list of trusted folders with DLLs. 
+
+In the next project, I hope to create a script which then alerts on the API calls, CreateRemoteThread and WriteProcessMemory, while also verifying the signature of the DLL to help mitigate this attack to further reduce false positives.
